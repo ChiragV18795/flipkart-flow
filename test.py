@@ -56,7 +56,7 @@ class TestFlikart:
             self.flipkart_page.print_item_details(2)
             self.flipkart_page.print_item_details(3)
 
-            # get compare item page url
+            # get compare item page url and display avalibility
             self.compare_page_url = self.driver.current_url
             self.flipkart_page.add_to_cart(1)
             self.driver.get(self.compare_page_url)  
